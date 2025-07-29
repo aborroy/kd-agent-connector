@@ -1,0 +1,16 @@
+<webscript>
+    <shortname>Get an answer for a prompt using a given Agent</shortname>
+    <description><![CDATA[
+    Get an answer and a list of document references from Knowledge Discovery for a prompt using a given Agent.
+    <br />
+    The following properties must be set.
+    <dl>
+    <dt>agentId</dt><dd>The ID of the Agent</dd>
+    <dt>prompt</dt><dd>The Prompt to be processed</dd>
+    </dl>
+    ]]></description>
+    <url>/kd/prompt</url>
+    <format default="json">argument</format>
+    <authentication>user</authentication>
+    <family>KD</family>
+</webscript>

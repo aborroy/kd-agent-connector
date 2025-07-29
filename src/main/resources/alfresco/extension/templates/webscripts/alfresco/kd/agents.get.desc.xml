@@ -1,0 +1,16 @@
+<webscript>
+    <shortname>Get a list of KD agents</shortname>
+    <description><![CDATA[
+    Get a list of agents available in Knowledge Discovery.
+    <br />
+    Optional parameters (/kd/agents?offset={offset?}&limit={limit?}):
+    <dl>
+    <dt>offset</dt><dd>Number of results to skip starting from the beginning</dd>
+    <dt>limit</dt><dd>Max number of results</dd>
+    </dl>
+    ]]></description>
+    <url>/kd/agents</url>
+    <format default="json">argument</format>
+    <authentication>user</authentication>
+    <family>KD</family>
+</webscript>
