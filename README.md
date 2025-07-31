@@ -76,11 +76,11 @@ Pick the scenario that matches your environment.
        image: alfresco/alfresco-content-repository-community:25.1
        environment:
          JAVA_OPTS: >-
-           -Dapp.knowledge-discovery.client-id=<your-client-id>
-           -Dapp.knowledge-discovery.client-secret=<your-client-secret>
-           -Dapp.knowledge-discovery.oauth-url=https://auth.iam.dev.experience.hyland.com/idp
-           -Dapp.knowledge-discovery.api-url=https://api.ai.dev.experience.hyland.com
-           -Dapp.knowledge-discovery.hx-env-id=<environment‑uuid>
+           app.knowledge-discovery.client-id=<your-client-id>
+           app.knowledge-discovery.client-secret=<your-client-secret>
+           app.knowledge-discovery.oauth-url=https://auth.iam.dev.experience.hyland.com/idp
+           app.knowledge-discovery.api-url=https://api.ai.dev.experience.hyland.com
+           app.knowledge-discovery.hx-env-id=<environment‑uuid>
        volumes:
          - ./extensions/kd-agent-connector-1.0.jar:/usr/local/tomcat/modules/platform/kd-agent-connector-1.0.jar
    ```
