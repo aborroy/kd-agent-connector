@@ -82,12 +82,10 @@ Pick the scenario that matches your environment.
            -Dapp.knowledge-discovery.api-url=https://api.ai.dev.experience.hyland.com
            -Dapp.knowledge-discovery.hx-env-id=<environment‑uuid>
        volumes:
-         - ./extensions/kd-agent-connector-1.0.jar:/usr/local/tomcat/modules/platform/kd-agent-connector-1.0.jar
+         - ./extensions/kd-agent-connector-0.8.0.jar:/usr/local/tomcat/modules/platform/kd-agent-connector-0.8.0.jar
    ```
 
-4. Put your `alfresco-global.properties` overrides into `./config`.
-
-5. `docker compose up` – the module is detected at start‑up (`Alfresco modules -> kd-agent-connector`).
+4. `docker compose up` – the module is detected at start‑up (`Alfresco modules -> kd-agent-connector`).
 
 ### 2. Bare‑metal / classic Tomcat
 
