@@ -1,3 +1,4 @@
+<#setting number_format="0">
 {
   "agents": [
     <#list agents as agent>
