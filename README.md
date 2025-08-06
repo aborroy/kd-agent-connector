@@ -64,7 +64,7 @@ Pick the scenario that matches your environment.
 
 ### 1. Docker‑based ACS (official images)
 
-1. **Build** the JAR (see above) or grab it from your CI artefact repo.
+1. **Build** the JAR (see above) or grab it from your CI artifact repo.
 
 2. Create an *extensions* folder next to your `docker-compose.yml` and copy the JAR there.
 
@@ -82,7 +82,7 @@ Pick the scenario that matches your environment.
            -Dapp.knowledge-discovery.api-url=https://api.ai.dev.experience.hyland.com
            -Dapp.knowledge-discovery.hx-env-id=<environment‑uuid>
        volumes:
-         - ./extensions/kd-agent-connector-0.8.0.jar:/usr/local/tomcat/modules/platform/kd-agent-connector-0.8.0.jar
+         - ./extensions/kd-agent-connector-0.8.0.jar:/usr/local/tomcat/webapps/alfresco/WEB-INF/lib/kd-agent-connector-0.8.0.jar
    ```
 
 4. `docker compose up` – the module is detected at start‑up (`Alfresco modules -> kd-agent-connector`).
